@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace TestApp
 {
@@ -6,7 +7,8 @@ namespace TestApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var file = File.ReadAllText("description.txt");
+            Console.WriteLine(file);
         }
     }
 }
