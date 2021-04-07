@@ -13,7 +13,8 @@ namespace TestApp.Tests
 
 
         static object[] FormatCases =
-        {
+        { 
+            new object[] { 0, "now" },
             new object[] { 12, "12 seconds" },
             new object[] { 120, "2 minutes" },
             new object[] { 1120, "18 minutes and 40 seconds" },
